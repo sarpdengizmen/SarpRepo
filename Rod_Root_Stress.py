@@ -16,6 +16,7 @@ g = 9.81 # m/s^2
 # Values subjected to change 
 # --------------------
 w = 600
+alpha = 0 #rad/s^2 angular acceleration
 wrad = w*2*np.pi/60 # rad/s
 b = 24 # mm
 h = 4 # mm
@@ -36,9 +37,9 @@ for i in range(0,len(data[:,0])):
     #print(Fn,Ft) 
 
     Fx = (Fn+m_wing*wrad**2*(r_wing/1000)+2*m_rod*wrad**2*(r_rod/1000))/2  
-    Fy = Ft/2
+    Fy = Ft/2+m_wing*alpha*(r_wing/1000)/2+m_rod*alpha*(r_rod/1000)
     Fz = (2*m_rod*g+m_wing*g)/2
-    Mz = (Ft*r_wing)/2  # Nmm
+    Mz = (Ft*r_wing)/2+m_wing*alpha*(r_wing/1000)*r_wing/2+m_rod*alpha*(r_rod/1000)*r_rod # Nmm
     My = (2*m_rod*g*r_rod+m_wing*g*r_wing)/2  # Nmm
     #print(Fx,Fy,Fz,Mz,My)
 
@@ -74,6 +75,6 @@ for i in range(0,len(data[:,0])):
     # eigenvals = principal_stress_3d(sigma_x = sigma_xE, tau_xy = tau_xyE, tau_xz = tau_xzE)
     # print(eigenvals)
 print("-----------------------------\nConnection Rod Loading Results\n-----------------------------")
-print(f"Rot. Speed = {w} rpm \nRod width = {b} mm \nRod height = {h} mm \nWing mass = {m_wing} kg\nRod mass = {m_rod} kg\nMax. Eq. Stress @ Critical C.S.= {max_stress} MPa")  
+print(f"Rot. Speed = {w} rpm \nAng. Acc. = {alpha} rad/s^2\n Rod width = {b} mm \nRod height = {h} mm \nWing mass = {m_wing} kg\nRod mass = {m_rod} kg\nMax. Eq. Stress @ Critical C.S.= {max_stress} MPa")  
 FOS = sigma_yield/max_stress
 print(f"FOS = {FOS}")
