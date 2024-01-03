@@ -11,21 +11,23 @@ def principal_stress_3d(sigma_x = 0, sigma_y = 0, sigma_z = 0, tau_xy = 0, tau_x
     return eigenvalues
 
 r_wing = 350 # mm
-r_rod = 203  # mm
+r_rod = 190  # mm
 g = 9.81 # m/s^2
 # Values subjected to change 
 # --------------------
 w = 600
-alpha = 0 #rad/s^2 angular acceleration
+alpha = 200 #rad/s^2 angular acceleration
 wrad = w*2*np.pi/60 # rad/s
-b = 24 # mm
+b = 15 # mm
 h = 4 # mm
-m_wing = 1 # kg
-m_rod = 3 # kg
+l = 328 # mm
+m_wing = 0.4 # kg From NX
+m_rod = 7.9*10**-6*b*h*l # kg
 # --------------------
 Iy = (b*h**3)/12 # mm^4
 Iz = (h*b**3)/12 # mm^4
 sigma_yield = 215 # MPa STEEL 304
+E_mod = 193*10**3 # MPa
 
 # Import the data from the excel file
 data = np.genfromtxt('Normal_Tang.csv', delimiter=',', skip_header=1)
@@ -78,3 +80,4 @@ print("-----------------------------\nConnection Rod Loading Results\n----------
 print(f"Rot. Speed = {w} rpm \nAng. Acc. = {alpha} rad/s^2\n Rod width = {b} mm \nRod height = {h} mm \nWing mass = {m_wing} kg\nRod mass = {m_rod} kg\nMax. Eq. Stress @ Critical C.S.= {max_stress} MPa")  
 FOS = sigma_yield/max_stress
 print(f"FOS = {FOS}")
+print("Max deflection of rod due to weights = ", (m_rod*g*l**3)/(8*E_mod*Iy) + (m_wing*g*l**3)/(8*E_mod*Iy), "mm")

@@ -1,19 +1,20 @@
 import numpy as np
 
 r_wing = 350 # mm
-r_rod = 203  # mm
+r_rod = 190  # mm
 g = 9.81 # m/s^2
 # Values subjected to change 
 # --------------------
 w = 600
-alpha = 0 #rad/s^2 angular acceleration
+alpha = 200 #rad/s^2 angular acceleration
 wrad = w*2*np.pi/60 # rad/s
-width = 24 # mm
-b = 4 # mm
-a = 4 # mm
-m_wing = 1 # kg
-m_rod = 3 # kg
-d_bolt = 4 # mm
+width = 15 # mm
+b = 4 # mm Rod Thickness
+a = 4 # mm Conn part thickness
+l = 328 # mm
+m_wing = 0.4 # kg
+m_rod = 7.9*10**-6*b*width*l # kg
+d_bolt = 5 # mm
 d_b = 5*d_bolt # mm distance between bolts
 # --------------------
 sigma_yield_st = 215 # MPa STEEL 304

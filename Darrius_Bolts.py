@@ -5,14 +5,14 @@ r_wing = 350 # mm
 g = 9.81 # m/s^2
 # Values subjected to change 
 # --------------------
-w = 300 # rpm
+w = 600 # rpm
 wrad = w*2*np.pi/60 # rad/s
-alpha = 0 #rad/s^2 angular acceleration
-b = 24 # mm
+alpha = 200 #rad/s^2 angular acceleration
+b = 15 # mm
 h = 4 # mm
-m_wing = 1 # kg
+m_wing = 0.4 # kg
 d_bolt = 4 # mm
-d_t = 10 # mm moment arm of tangential force
+d_t = 25 # mm moment arm of tangential force
 d_b = 5*d_bolt # mm distance between bolts
 # --------------------
 sigma_yield_st = 215 # MPa STEEL 304
