@@ -1,0 +1,46 @@
+Image Processing A Basic Introduction for Mechatronics Applictions
+
+An image in computers corresponds to tensors, stacked up matrices
+  Black and white images are 2D matrices
+  Color images are 3D matrices (RGB)
+
+In images sampling corresponds to pixel resolution
+Quantization is the number of bits used to represent each pixel (Its color representation quality)
+
+Check the collab file that introduces numpy.
+
+Definitions for images:
+  -Neighbors: 4 neighbors (+) or 8 neighbors (+ and x)
+  -Path: A sequence of pixels such that pixels are neighbors, can be 4-path or 8-path
+  -Foreground: The object of interest in the image (pixels denoted 1)
+  -Background: The rest of the image (pixels denoted 0)
+  -Connectivity: A pixel p is connected to pixel q in foreground if there is a path between them. (Not leaving the foreground)
+  -Boundary: The set of pixels that are connected to the background and the foreground (8 connected)
+  -Interior: The set of pixels that are connected to the foreground and not the background (4 connnected)
+  Properties:
+    -Size
+    -Area, Perimeter
+    -Position (First moment minimized)
+    -Orientaion (Second moment minimized)
+    -Elongation
+    -Compactness (Perimiter**2/Area) (Circle is most compact 4*pi) 
+    -Euler Number (Number of component - Number of Holes) (Indifferent to scaling rotation etc.)
+    -Distance: Euclidian, City Block, Chessboard (Maximum of Chessboard)
+    -Medial Axis: ????
+    -Projections: Stacking to x or y axis. Can be used for understandign similarity of objects.
+    
+  Actions:
+    -Translation
+    -Reflection: Mirroring w.r.t origin
+    -Erosion & Dilation: Expansion and shrinking from the boundary.
+      Using erosion and then dilation can be used as a size filter depending on size of structuring element. Eliminate noise on background. OPENING 
+    -Dilation & Erosion: Eliminate noise on foreground. CLOSING
+    
+skimage Morpholocigal Transformations incele oyna proje icin yararli olacak. 
+    
+
+
+
+
+
+  

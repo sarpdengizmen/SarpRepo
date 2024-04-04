@@ -1,0 +1,15 @@
+OOP:
+  Immutable/ mutable properties: Nonchangable/Changable properties.
+  Methods/Functions: What can an object do? What can it perform?
+    May be called or can be triggered by an event.
+  ?? What is an instance?
+    
+Python:
+  if __name__ == '__main__': # Allows understanding of where the code is being run from. If name is = main the code is not imported.
+  eval(): Tries to evaluate a string as a meaningful line of code. If name = main the code is not imported.
+  isinstance(): Checks if an object is an instance of a class.
+  dir(<class>): Prints out all the attributes and methods of a class.
+    dirs with __ are hidden methods.
+  Classes can be inherited from other classes.
+    As an example: A student class will be a parent class. ME461 Student can inherit properties of sudents and modify them according to needs. (INHERITANCE)
+    Even every custom function has a parent class. (Backhand of python)

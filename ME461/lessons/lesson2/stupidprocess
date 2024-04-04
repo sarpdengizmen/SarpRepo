@@ -1,0 +1,7 @@
+#!/usr/bin/zsh 
+for i in {0..100}
+  do 
+    sleep 0.5
+    echo "$i: hey gone for 3 now"
+    done
+    

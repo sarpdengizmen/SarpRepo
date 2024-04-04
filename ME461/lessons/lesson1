@@ -1,0 +1,94 @@
+Terminal Dersi
+cd -: Moves to previous working directory.
+Helping commands:
+  man <cmnd>: manual
+  whatis <cmnd>: brief expl.
+  <cmnd> --help
+mkdir: makes directory
+  -p: creates progressively can use /newfolder1/newfolder2
+
+$: Sistem variablelari icin kullanilir
+  orn:
+    $HOME (home directory)
+    $SHELL (aktif shell directorysi)
+    $PATH (Terminalde kullanilabilen tum komutlarin sirasiyla hangi directoryde arandigini gosterir)
+env or printenv: System enviorement variablelarini gosterir. $li seyleri
+
+where (command): Commandin pathde nerede oldugunu gosterir.
+pwd (print working directory): aktif directory doner
+cat (file): prints a file to Terminal
+  -n: print with line numbers
+head [-numbers] (file): prints start of a file
+tail [-numbers] (file): prints end of a file
+wc (file): prints lenght of a file
+grep (wordtobesearched): searches for a textfile for the keyword
+  ex: cat .zsh_history | grep python
+  [-i]: case insensitive search
+touch (name): creates file if name does not exists
+<tree>: better ls -R
+more (file): displays file in pages
+less (file): displays file in an vim like movement enviorement
+
+gzip (filename): Zips the file. [-d] to unzip
+alias shorcut='command': aliases the command
+chmod: changes the file mode
+  +x: give ex. permission to everyone
+
+
+About processes:
+ps: lists current processes running in the terminal
+  -e: processes beyond the terminal 
+bg & fg: move between background and foreground processes 
+jobs: shows a list of tasks
+kill [PID #]: kills the task 
+fuser (filename): Gives the names of processes using the filename.
+
+
+Some terminal shortcuts:
+<Ctrl-c>: stop current terminal operation
+<Ctrl-l>: Clears screen by scrolling it
+ ctrl-u: Erase all the way to the beginning
+ ctrl-k: Erase all the way to the end
+ ctrl-w: Erase backwards word by word
+ ctrl-y: Yank what you have erased (just like paste, but not paste, try out and understand the difference)
+ ctrl-a: Go to the beginning of line
+ ctrl-e: Go to the end of line
+
+<source>: runs shell commands in a file
+<ping>: pings a website
+<whatis>: displays descriptions of a command
+<sleep (duration)>sleeps shell for seconds (quizde cikabilir)
+  ex: sleep 4 ; clc (clears screen after 4 seconds)
+(wanttowrite) > (filetowrite): write to a file (clears existing)
+(wanttowrite) >> (filetowrite): append to a file
+<|>:Pipe komutu, basina konan komutun outputunu 2. komuta verir
+<;>: print several commands in one line
+
+<.>: Current directory
+<..>: Parent directory
+
+bg fg processleri:
+  <C-z>: Calisan processi background a alir ve suspend eder.
+  (command)& : processi calistirir ve calisir halde bg'ye atar.
+  <jobs>: calisan tum processleri gosterir
+  <fg>: backgrounda son alinani bg'dan fg'a ceker
+    fg %(num): job number is brought to fg
+  <ps>: processleri gosterir
+    -e: processes beyond the terminal 
+  kill (PID number): kills process
+    -9: guaranteed kill
+
+#!: executable yapmaya calistiginda basina bundan ve sonrasinda calistirmasini istedgiin programin pathini koyacaksin
+  ex: #!/usr/bin/zsh
+
+PythonVirtualEnv:
+  Linuxta farkli versiyonlar ve farkli libraryler kullanman gerekebilir. bu sebeple farkli versiyonlar icin farkli virtual enviorementlar olusturabilirsin. 
+
+TODO:
+
+$PYTHONSTARTUP : Bu variablea kendin yarattigin bir python config fileina point edersen pythton acildiginda o komutlari gerceklestirir. numpy falan import et.
+Shabang nedir ona bak. Shabang ROS entegrasyonu.
+
+GOREVLER:
+mediapipe demonstration with group python
+GUI design with Python 

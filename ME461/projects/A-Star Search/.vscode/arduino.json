@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/ttyUSB0",
+    "sketch": "../../../SarpRepo/Arduino_relay/sketch_jan7a/sketch_jan7a.ino"
+}

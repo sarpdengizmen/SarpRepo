@@ -1,0 +1,35 @@
+Sandboxing: Calistirilan kodun belli sinirlar ve permissionlar icinde calismasina izin verir.
+Docstring: Functionlar classlar hakkinda bilgi almak icin yardimci olabilir. Nasil ulasicagini bul.
+
+Command line level kodlari python kodu icerisinden runlanabilir.
+orn: library does not exist would you like me to install it?
+
+ME461 Practices:
+  -Kodlarinda Exception handlinge onem vermen lazim.
+  -Comment
+  -Do not crash
+  -Do not rush
+  -Baby Steps
+  -Do Not Assume!
+
+Buying Guide:
+  DC motorlarin tanesi max 1 amp cekmeli
+
+ROS:
+  Modular sistemlerin entegrasyonu iletisimi konusunda yardimci olur.
+    Modular: Speciliazed seperated programs, that can be reused in different procesess.
+  Tool that allows managing of communication methods. (ex:Yelling, Request&Recieve, Request&Recievew/Steps)
+
+TODO:
+Look into socket programming (TCPIP or UDP) in python communication btwn computers!!!
+  Bilgisyarin network portlari hakkinda arastirma yap.
+
+ROS2 documentationu tutoriali tamamla. (ME461 bookmark)
+  -Topics services and actions | Coreesponds to 3 different com. types
+  -Nodes Software, pc, modular purposes
+  
+Python uzerinden socket programming ile pong oyunu yap.
+  -Communication diagrami, gonderilen datanin ne oldugu uzerine sunum
+  -Oyun gosterimi
+  -Multiple port kullan (socket)
+

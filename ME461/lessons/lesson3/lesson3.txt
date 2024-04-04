@@ -1,0 +1,8 @@
+OOP:
+  Immutable/ mutable properties: Nonchangable/Changable properties.
+  Methods/Functions: What can an object do? What can it perform?
+    May be called or can be triggered by an event.
+    
+Python:
+  if __name__ == '__main__': # Allows understanding of where the code is being run from. If name is = main the code is not imported.
+  eval(): Tries to evaluate a string as a meaningful line of code. If name = main the code is not imported.

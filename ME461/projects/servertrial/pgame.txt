@@ -1,0 +1,76 @@
+# PONG BASE GAME 
+# YERLIZEKA
+
+import turtle
+import random
+import platform
+import os
+import network
+
+
+color_array = ["black", "white"]
+
+# Window Setup
+window = turtle.Screen()
+window.title("Pong Game")
+window.bgcolor(color_array[0])
+window.setup(width=800, height=600)
+window.tracer(0) # window update miktari ayari 0 = max hiz bekleme yok
+
+# P1 Paddle
+P1_Paddle = turtle.Turtle() # turtle object
+P1_Paddle.speed(0) # animation speed 
+P1_Paddle.shape("square") # paddle shape
+P1_Paddle.color(color_array[1]) # paddle color
+P1_Paddle.shapesize(stretch_wid=5, stretch_len=1) # paddle size 5x20px 1x20px
+P1_Paddle.penup() # disable line drawing
+P1_Paddle.goto(-350, 0) # paddle starting position
+
+# P2 Paddle
+P2_Paddle = turtle.Turtle() # turtle object
+P2_Paddle.speed(0) # animation speed 
+P2_Paddle.shape("square") # paddle shape
+P2_Paddle.color(color_array[1]) # paddle color
+P2_Paddle.shapesize(stretch_wid=5, stretch_len=1) # paddle size 5x20px 1x20px
+P2_Paddle.penup() # disable line drawing
+P2_Paddle.goto(350, 0) # paddle starting position
+
+# Ball
+Ball = turtle.Turtle() # turtle object
+Ball.speed(0) # animation speed
+Ball.shape("square") # ball shape
+Ball.color(color_array[1]) # ball color
+Ball.penup() # disable line drawing
+Ball.goto(0, 0) # ball starting position
+
+paddleincrement = 20
+# Movement Functions
+def P2_Paddle_Up():
+    y = P2_Paddle.ycor() # get y coordinate
+    if y > 250:
+        return
+    y += paddleincrement # add 20px
+    P2_Paddle.sety(y) # set y coordinate
+
+def P2_Paddle_Down():
+    y = P2_Paddle.ycor() # get y coordinate
+    if y < -250:
+        return
+    y -= paddleincrement # add 20px
+    P2_Paddle.sety(y) # set y coordinate
+
+# Keyboard Binding
+window.listen() # listen keyboard inputs
+window.onkeypress(P2_Paddle_Up, "Up") # Up key for P2_Paddle_Up
+window.onkeypress(P2_Paddle_Down, "Down") # Down key for P2_Paddle_Down
+
+# Main Game Loop
+while True:
+    # net = network.Network()
+    # net.send(["P2", P2_Paddle.ycor()])
+    window.update() # window update
+    # Ball Movement
+    # Ball.setx(Ball.xcor() + Ball.dx) # ball movement
+    # Ball.sety(Ball.ycor() + Ball.dy) # ball movement
+
+

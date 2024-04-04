@@ -1,0 +1,54 @@
+python bit gosterimi:
+  a = 0b11110000
+  print(a) -> 240
+
+what are unsigned and signed integers?
+4bit = nibble
+8bit = byte
+16bit = word
+
+using bytes to store bit type info is useful leads size and time savings
+
+  0 = 0b0
+  1 = 0b1
+  2 = 0b10
+  4 = 0b100
+  8 = 0b1000
+    Note that multiplying by 2 shifts the bit to the left towards the most significant bit 
+    and dividing by 2 shifts the bit to the right towards the least significant bit.
+  240 >> 1 = 120
+  240 << 2 = 960
+
+  8 or (|) 1 = 9 - bitwise or 1000 | 0001 > 1001 = 9
+  8 and (&) 1 = 0 - bitwise and 1000 | 0001 > 0000 = 0
+
+  Hexadecimal:
+    11110011 = 243 --> in hex = F3 seperated into nibbles F = 15 = 1111, 3 = 0011.
+    python:
+      0xF3: python 
+
+  Bit Masking:
+    Finding out particular bits in a byte
+    a = 0b11110011
+    what is bit 5?
+    n = 5
+    mask = 2**(n-1)
+    a & mask = 16
+    (a & mask) >> (n-1) = 1 *We learned that 5th bit is 1 --- 11110011 & 00010000 = 00010000 >> 4 = 0b1 
+
+    Toggleing bits in a byte
+    a = 0b11110011
+    xor (^)
+    11110011
+    ^
+    00011000 mask
+    11101011 ans
+    
+
+
+Gizli Gorev:
+  Make an encoder using IR sensor. Make it creative. For 2 way encoding 2 IR sensor may be required. Research quadritire encoding. QUADRITRE ENCODING ONEMLI
+
+
+
+

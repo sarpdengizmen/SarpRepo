@@ -1,0 +1,44 @@
+PI PICO INTRODUCTION
+UART: Universal Asynchronous Receiver/Transmitter
+SPIO: Serial Peripheral Input/Output
+I2C: Inter-Integrated Circuit (Communication between microcontrollers)
+^^^ These are all serial comm. protocol ^^^
+
+
+GPIO: General Purpose Input/Output (A digital pin 1 or 0)
+3.3 Supply voltage for the PICO
+
+Files inside pipico:
+  boot.py (Works once when powered on)
+  code.py (Works when reset)
+  and more...
+  both can be modified to fit needs
+
+We will use circuitpython
+Programs for coding:
+  Thonny
+  MU
+
+Shell:
+ls /dev/ttyA*
+  prints ports that are connected ***
+
+
+
+
+
+PRECAUTIONS:
+  -NEVER short GND & 5V
+  -Believe in resistors: No led without resistors!
+  -Keep breadbords tidy, leads jump wires as short as possible.
+  -Pay attention to polarities! (Capacitor etc.)
+  -When usin an external supply:
+    ~Common ground
+    ~Prefer regulated p.s.
+    ~Keep p.s. disconnected when making changes.
+    ~Try using a supply with current indicator and watch how much current is being drawn.
+
+
+
+TODO:
+Toolbox bulabilirsen bul.

@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+from optparse import OptionParser
+import serial
+
+if __name__ == "__main__": # this is the entry point to the python file
+    try:
+        ser = serial.Serial('/dev/ttyACM1', 9600) #Init and open the serial port
+    except:
+        print("Serial port not available")
+        exit()
+    ser.flushInput() # flush the input buffer
+    parser = OptionParser() # this is the command line parser
+    (options, args) = parser.parse_args() # parse the command line arguments
+    # args is a list of the arguments
+    print(".......................hi....")
+    ser.write(f"{args}\r\n".encode()) # send the command line arguments to the serial port
+    line = ser.read_until(b"Done\r").decode() # read the serial port until the string "Done" is found
+    print(line)
+    print(".......................bye...")
+    ser.close()
+
+else:
+	print('This code is not meant to be imported, it is a simple command line tool')

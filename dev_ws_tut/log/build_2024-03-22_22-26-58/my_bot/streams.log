@@ -1,0 +1,54 @@
+[0.098s] Invoking command in '/home/sarpdengizmen/dev_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sarpdengizmen/dev_ws/src/my_bot -DCMAKE_INSTALL_PREFIX=/home/sarpdengizmen/dev_ws/install/my_bot
+[0.309s] -- The C compiler identification is GNU 11.4.0
+[0.475s] -- The CXX compiler identification is GNU 11.4.0
+[0.496s] -- Detecting C compiler ABI info
+[0.616s] -- Detecting C compiler ABI info - done
+[0.626s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.629s] -- Detecting C compile features
+[0.631s] -- Detecting C compile features - done
+[0.636s] -- Detecting CXX compiler ABI info
+[0.777s] -- Detecting CXX compiler ABI info - done
+[0.797s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.797s] -- Detecting CXX compile features
+[0.799s] -- Detecting CXX compile features - done
+[0.807s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.076s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.246s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.432s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.467s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.467s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.470s] -- Added test 'lint_cmake' to check CMake code style
+[1.472s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.481s] -- Added test 'xmllint' to check XML markup files
+[1.484s] -- Configuring done
+[1.491s] -- Generating done
+[1.493s] -- Build files have been written to: /home/sarpdengizmen/dev_ws/build/my_bot
+[1.502s] Invoked command in '/home/sarpdengizmen/dev_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/sarpdengizmen/dev_ws/src/my_bot -DCMAKE_INSTALL_PREFIX=/home/sarpdengizmen/dev_ws/install/my_bot
+[1.506s] Invoking command in '/home/sarpdengizmen/dev_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sarpdengizmen/dev_ws/build/my_bot -- -j4 -l4
+[1.567s] Invoked command in '/home/sarpdengizmen/dev_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/sarpdengizmen/dev_ws/build/my_bot -- -j4 -l4
+[1.612s] Invoking command in '/home/sarpdengizmen/dev_ws/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sarpdengizmen/dev_ws/build/my_bot
+[1.623s] -- Install configuration: ""
+[1.624s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/config
+[1.624s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/config/empty.yaml
+[1.624s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/description
+[1.624s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/launch
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/worlds
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/worlds/empty.world
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[1.625s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[1.626s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[1.626s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[1.626s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/environment/path.sh
+[1.627s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/environment/path.dsv
+[1.627s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/local_setup.bash
+[1.627s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/local_setup.sh
+[1.627s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/local_setup.zsh
+[1.627s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/local_setup.dsv
+[1.628s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/package.dsv
+[1.628s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[1.628s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[1.629s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[1.629s] -- Installing: /home/sarpdengizmen/dev_ws/install/my_bot/share/my_bot/package.xml
+[1.632s] Invoked command in '/home/sarpdengizmen/dev_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/sarpdengizmen/dev_ws/build/my_bot

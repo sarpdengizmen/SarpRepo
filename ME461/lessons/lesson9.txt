@@ -1,0 +1,17 @@
+Search Algorithms:
+  Greedy search: With feedack infromation from target, algorithms makes instant decisions that get closer to target without regard to correct path.
+  Blind search: Without feedback infromation trying to reach target.
+
+  Successor function (operator): returns a set of reachable states with a single action.
+  Cost functions 
+  (Huiristic): Not unique, estimate of cost of reaching goal. Cost of greedy.
+  g(n): Cost of path to current point in algorithm. A cost function of blind search.
+
+  Huiristic + g(n): Blind + Greedy A**
+
+
+  The search process builds a search tree, with the root being the initial state.
+
+  
+  
+  
