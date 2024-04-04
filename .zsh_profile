@@ -1,0 +1,16 @@
+alias clr="clear"
+alias lsserial="ls -l /sys/class/tty/*/device/driver | grep -v \"platform/drivers/serial8250\" | awk '{print \$9}' | awk -F'/' '{print \"/dev/\" \$5}'"
+alias py="python3"
+alias virtualenv='python3 -m venv'
+alias yerlidir="cd $HOME/ME461/ME461_YERLIZEKA"
+alias mydir="cd $HOME/SarpRepo" 
+export EDITOR="/usr/bin/zsh"
+export PATH="$HOME/.local/bin:$PATH"
+source /opt/ros/iron/setup.zsh
+alias runmu="cd $HOME/apps/MuEditor-Linux-1.2.0-x86_64; ./Mu_Editor-1.2.0-x86_64.AppImage"
+plugins=(colorize)
+ZSH_COLORIZE_STYLE="monokai"
+source /usr/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=/opt/ros/iron/
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
